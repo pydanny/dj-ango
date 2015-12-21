@@ -24,12 +24,25 @@ Install dj-ango::
 
 Then use it in a project::
 
-    import ango
+    from ango import settings, TemplateView, url
 
-Features
---------
+    class AboutView(TemplateView):
+        template_name = "about.html"
 
-* TODO
+        def get_context_data(self, **kwargs):
+            context = super(AboutView, self).get_context_data(**kwargs)
+            context['is_debug_mode'] = settings.DEBUG
+            return context
+
+    urlpatterns = [
+        url(
+            regex=r'^about/$',
+            view=AboutView.as_view(),
+            name='about'
+        )
+    ]
+
+
 
 Running Tests
 --------------
