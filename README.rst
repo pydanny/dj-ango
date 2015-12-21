@@ -22,7 +22,9 @@ Install dj-ango::
 
     pip install dj-ango
 
-Then use it in a project::
+Then use it in a project:
+
+.. code-block:: python
 
     from ango import settings, TemplateView, url
 
