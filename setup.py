@@ -11,7 +11,7 @@ try:
 except ImportError:
     from distutils.core import setup
 
-version = ango.__version__
+version = "0.2.0"
 
 if sys.argv[-1] == 'publish':
     try:
