@@ -1,3 +1,5 @@
+__version__ = 0.2.0
+
 from django.conf.urls import url, include
 from django.core import settings
 from django.core.urlresolvers import reverse, reverse_lazy
