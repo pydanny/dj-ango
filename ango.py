@@ -1,4 +1,4 @@
-__version__ = 0.2.0
+__version__ = "0.2.0"
 
 from django.conf.urls import url, include
 from django.core import settings
