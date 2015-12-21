@@ -4,8 +4,6 @@
 import os
 import sys
 
-import ango
-
 try:
     from setuptools import setup
 except ImportError:
